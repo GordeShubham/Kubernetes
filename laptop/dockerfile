@@ -1,0 +1,4 @@
+FROM httpd
+RUN mkdir -p /var/www/html/laptop
+RUN echo "Hello cloudblitz" > /var/www/html/laptop/index.html 
+CMD ["httpd","-DFOREGROUND"]
